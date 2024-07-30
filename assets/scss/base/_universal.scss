@@ -6,132 +6,107 @@ body{
 
 .roboto-black-italic {
 	font-family: "Roboto", sans-serif;
-	font-weight: 900;
+	font-weight: $fw-black;
 	font-style: italic;
-	font-size: 48px;
+	font-size: $fz-2;
   }
 
 .container{
-	max-width: 1296px;
+	max-width: 1320px;
+	padding: 0 12px;
 	margin: 0 auto;
 }
 
-.color-deepRed{
-	color: #650300;
+.colorDark{
+	color:$dark-color;
 }
 
-.color-Red{
-	color:#AA0601;
+.colorPrimary{
+	color:$primary-color;
 }
 
-.color-white{
-	color: #FFFFFF;
+.colorWhite{
+	color: $white-color;
 }
 
-.bg-white{
-	background-color: #FFFFFF;
+.bgWhite{
+	background-color: $white-color;
 }
 
-.bg-red{
-	background: #AA0601;
+.bgPrimary{
+	background: $primary-color;
 }
 
 .button{
-	background-color: #AA0601;
-	color: #FFFFFF;
+	background-color:$primary-color;
+	color: $white-color;
+	&:hover{
+		background-color: $dark-color;
+	}
 }
 
-.bg-pink{
-	background-color: #FBF2F2;
+.bgLight{
+	background-color: $light-color;
 }
 
 h3{
-	font-size: 48px;
-	font-weight: bold;
+	font-size: $fz-2;
+	font-weight: $fw-bold;
 }
 
 h4{
-	font-size: 24px;
-	font-weight: bold;
+	font-size: $fz-4;
+	font-weight: $fw-bold;
 }
 
 a{
 	text-decoration: none;
 }
 
-/* 共通樣式 */
-body{
-	font-family: "Noto Sans TC", sans-serif;
-	line-height: 1.5;
+.pd-section{
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
-.roboto-black-italic {
-	font-family: "Roboto", sans-serif;
-	font-weight: 900;
-	font-style: italic;
-	font-size: 48px;
-  }
-
-.container{
-	max-width: 1296px;
-	margin: 0 auto;
+.mb-1{
+	margin-bottom: 48px;
 }
 
-.color-deepRed{
-	color: #650300;
+.flex-items{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
 }
 
-.color-Red{
-	color:#AA0601;
-}
-
-.color-white{
-	color: #FFFFFF;
-}
-
-.bg-white{
-	background-color: #FFFFFF;
-}
-
-.bg-red{
-	background: #AA0601;
-}
-
-.button{
-	background-color: #AA0601;
-	color: #FFFFFF;
-}
-
-.bg-pink{
-	background-color: #FBF2F2;
-}
-
-h3{
-	font-size: 48px;
-	font-weight: bold;
-}
-
-h4{
-	font-size: 24px;
-	font-weight: bold;
-}
-
-a{
-	text-decoration: none;
-}
 
 @media (max-width:1300px) {
 	.container{
-		width: 90%;
+		max-width: 1100px;
 	}
+}
+
+@media (max-width:800px) {
+	.container{
+		max-width: 720px;
+	}
+	
 }
 
 @media (max-width:710px) {
 	.container{
-		width: 92%;
+		max-width: 371px;
 	}
 
 	h3{
-		font-size: 24px;
+		font-size: $fz-4;
+	}
+
+	.pd-section{
+		padding: 40px 0;
+	}
+
+	.mb-1{
+		margin-bottom: 24px;
 	}
 }

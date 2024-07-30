@@ -6,82 +6,63 @@
 }
 
 .specialRecommendation{
-	padding: 296px 0;
+	padding-top: 296px;
+	padding-bottom: 296px;
 	text-align: end;
-}
 
-.specialRecommendation h4{
-	font-size: 36px;
-}
+	h4{
+		font-size: $fz-3;
+	}
 
-.specialRecommendation h2{
-	font-size: 64px;
-	font-weight: bold;
-	margin-bottom: 4px;
-}
+	h2{
+		font-size: $fz-1;
+		font-weight: $fw-bold;
+		margin-bottom: 4px;
+	}
 
-.specialRecommendation .button{
-	font-size: 20px;
-	padding: 6px 12px;
-}
+	.button{
+		font-size:$fz-5;
+		padding: 6px 12px;
+	}
 
-.specialRecommendation .button:hover{
-	background-color: #650300;
 }
 
 /* servers */
 
 .servers{
 	text-align: center;
-	padding: 80px 0;
-}
 
-.servers-items{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 24px;
-}
+	h3{
+		margin-bottom: 24px;
+	}
 
-.servers h3{
-	margin-bottom: 24px;
-}
+	&-item{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-.servers-item{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+		img{
+			margin-bottom: 16px;
+		}
 
-.servers-item img{
-	margin-bottom: 16px;
-}
-
-.servers-item h4{
-	margin-bottom: 8px;
+		h4{
+			margin-bottom: 8px;
+		}
+	}
 }
 
 /* classic */
 
 .classic{
-	padding: 80px 0;
 	text-align: center;
+
+	&-item{
+		img{
+			margin-bottom: 8px;
+		}
+	} 
 }
 
-.classic h3{
-	margin-bottom: 48px;
-}
-
-.classic-items{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 24px;
-}
-
-.classic-item img{
-	margin-bottom: 8px;
-}
 
 /* coBranded */
 
@@ -92,18 +73,13 @@
 }
 
 .coBranded{
-	padding: 80px 0;
 	text-align: center;
-}
 
-.coBranded h3{
-	margin-bottom: 48px;
-}
-
-.coBranded-items{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	&-items{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .mobile{
@@ -113,24 +89,13 @@
 /* customerRecommend */
 .customerRecommend{
 	text-align: center;
-	padding: 80px 0;
-}
 
-.customerRecommend h3{
-	margin-bottom: 48px;
-}
-
-.customerRecommend-items{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap:24px;
-}
-
-.customerRecpmmend-item{
-	border: 1px solid #DEE2E6;
-	border-radius: 4px;
-	box-shadow: 0 2px 6px #00000029;
+	&-item{
+		border: 1px solid $border-color;
+		border-radius: 4px;
+		box-shadow: 0 2px 6px #00000029;
+		overflow: hidden;
+	}
 }
 
 .customer{
@@ -140,112 +105,123 @@
 	justify-content: space-between;
 	flex-direction: column;
 	padding: 16px;
-}
 
-.customer .customer-content h6{
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 8px;
-}
+	&-content{
+		h6{
+			font-size: $fz-6;
+			font-weight: 600;
+			margin-bottom: 8px;
+		}
 
-.customer .customer-content p{
-	font-size: 16px;
+		p{
+			font-size: $fz-6;
+		}
+	} 
+	
+	
 }
 
 .date{
-	font-size: 14px;
-	color: #707070;
+	font-size: $fz-7;
+	color: $date-color;
 }
 
 /* contact */
 .contact{
-	padding: 80px 0;
 	text-align: center;
-}
 
-.contact h3{
-	margin-bottom: 48px;
-}
+	&-form{
+		width: 50%;
+		margin: 0 auto;
+		text-align: left;
 
-.contact-form{
-	width: 50%;
-	margin: 0 auto;
-	text-align: left;
-}
+		p{
+			font-size: $fz-5;
+			margin-bottom: 24px;
+		}
 
-.contact-form p{
-	font-size: 20px;
-	margin-bottom: 24px;
-}
+		label{
+			margin-bottom: 8px;
+			font-size:$fz-6;
+		}
 
-.contact-form label{
-	margin-bottom: 8px;
-	font-size: 16px;
+		textarea{
+			height: calc(12vh);
+		}
+	}
 }
 
 .inputBox{
 	width: 100%;
 	margin-bottom: 16px;
-	font-size: 16px;
+	font-size:$fz-6;
 	padding: 6px 12px;
-	background-color: #FBF2F2;
-}
+	background-color: $light-color;
 
-.inputBox input{
-	border: #000000 1px solid;
+	input{
+		border: #000000 1px solid;
+	}
+
+	&-submit{
+
+		width: 100%;
+		text-align: center;
+
+		input{
+			text-align: center;
+			border:0;
+			padding: 16px 13.5%;
+			font-weight: $fw-bold;
+
+			&:hover{
+				background-color: $dark-color;
+			}
+		}
+
+	}
 	
-}
-
-.contact-form textarea{
-	height: calc(12vh);
-}
-
-.inputBox-agree{
-	margin-bottom: 48px;
-}
-
-.inputBox-submit input{
-	text-align: center;
-	border:0;
-	padding: 16px 13.5%;
-	font-weight: bold;
-}
-
-.inputBox-submit input:hover{
-	background-color: #650300;
-}
-
-.inputBox-submit{
-	width: 100%;
-	text-align: center;
+	
+	
 }
 
 @media (max-width:1300px) {
 
-	.servers-items{
-		flex-wrap: wrap;
-	}
-	.servers-item{
-		width: 45%;
+	.servers{
+
+		&-items{
+			flex-wrap: wrap;
+		}
+
+		&-item{
+			width: 45%;
+		}
 	}
 
-	.customerRecommend-items{
-		flex-wrap: wrap;
-	}
+	.customerRecommend{
 
-	.customerRecpmmend-item{
-		width: 45%;
+		&-items{
+			flex-wrap: wrap;
+		}
+
+		&-item{
+			width: 45%;
+		}
+
 	}
 	
 }
 
 @media (max-width:1060px) {
-	.classic-items{
-		flex-direction: column;
-	}
-	
-	.classic-item{
-		width: 43.75%;
+	.classic{
+
+		&-items{
+			flex-direction: column;
+		}
+
+		&-item{
+			width: 43.75%;
+		}
+
 	}
 }
 
@@ -271,43 +247,36 @@
 
 	.specialRecommendation{
 		padding: 144px 0;
-	}
-	
-	.specialRecommendation h4{
-		font-size: 16px;
-	}
-	
-	.specialRecommendation h2{
-		font-size: 24px;
-		margin-bottom: 8px;
-	}
 
-	.servers-item{
-		width: 100%;
-	}
+		h4{
+			font-size: $fz-6;
+		}
 
-	.servers-item p{
-		font-size: 16px;
+		h2{
+			font-size: $fz-4;
+			margin-bottom: 8px;
+		}
 	}
 	
 	.servers{
-		padding: 40px 0;
-	}
 
-	.classic-item{
-		width: 100%;
+		&-item{
+			width: 100%;
+
+			p{
+				font-size:$fz-6;
+			}
+		}
+
 	}
 
 	.classic{
-		padding: 40px 0;
+
+		&-item{
+			width: 100%;
+		}
 	}
 
-	.classic h3{
-		margin-bottom: 24px;
-	}
-	.coBranded{
-		padding: 40px 0;
-	}
 	.mobile{
 		display: block;
 	}
@@ -315,52 +284,40 @@
 	.pc{
 		display: none;
 	}
-	.coBranded h3{
-		margin-bottom: 24px;
-	}
 
 	.customerRecommend{
-		padding: 40px 0;
-	}
 
-	.customerRecommend h3{
-		margin-bottom: 24px;
-	}
+		&-item{
+			width: 100%;
+		}
 
-	.customerRecpmmend-item{
-		width: 100%;
-	}
-
-	.customerRecommend-items{
-		gap:16px;
+		&-items{
+			gap:16px;
+		}
 	}
 
 	.contact{
-		padding: 40px 0;
+
+		&-form{
+			width: 100%;
+
+			p{
+				font-size: $fz-6;
+			}
+
+			textarea{
+				height: calc(16vh);
+			}
+		}
 	}
 
-	.contact h3{
-		margin-bottom: 24px;
-	}
+	.inputBox{
+		&-submit{
 
-	.contact-form{
-		width: 100%;
-	}
-
-	.contact-form p{
-		font-size: 16px;
-	}
-
-	.inputBox-submit input{
-		width: 100%;
-	}
-
-	.inputBox-agree{
-		margin-bottom: 24px;
-	}
-
-	.contact-form textarea{
-		height: calc(16vh);
+			input{
+				width: 100%;
+			}
+		}
 	}
 	
 }
