@@ -1,0 +1,137 @@
+/* 共通樣式 */
+body{
+	font-family: "Noto Sans TC", sans-serif;
+	line-height: 1.5;
+}
+
+.roboto-black-italic {
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 48px;
+  }
+
+.container{
+	max-width: 1296px;
+	margin: 0 auto;
+}
+
+.color-deepRed{
+	color: #650300;
+}
+
+.color-Red{
+	color:#AA0601;
+}
+
+.color-white{
+	color: #FFFFFF;
+}
+
+.bg-white{
+	background-color: #FFFFFF;
+}
+
+.bg-red{
+	background: #AA0601;
+}
+
+.button{
+	background-color: #AA0601;
+	color: #FFFFFF;
+}
+
+.bg-pink{
+	background-color: #FBF2F2;
+}
+
+h3{
+	font-size: 48px;
+	font-weight: bold;
+}
+
+h4{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* 共通樣式 */
+body{
+	font-family: "Noto Sans TC", sans-serif;
+	line-height: 1.5;
+}
+
+.roboto-black-italic {
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 48px;
+  }
+
+.container{
+	max-width: 1296px;
+	margin: 0 auto;
+}
+
+.color-deepRed{
+	color: #650300;
+}
+
+.color-Red{
+	color:#AA0601;
+}
+
+.color-white{
+	color: #FFFFFF;
+}
+
+.bg-white{
+	background-color: #FFFFFF;
+}
+
+.bg-red{
+	background: #AA0601;
+}
+
+.button{
+	background-color: #AA0601;
+	color: #FFFFFF;
+}
+
+.bg-pink{
+	background-color: #FBF2F2;
+}
+
+h3{
+	font-size: 48px;
+	font-weight: bold;
+}
+
+h4{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+}
+
+@media (max-width:1300px) {
+	.container{
+		width: 90%;
+	}
+}
+
+@media (max-width:710px) {
+	.container{
+		width: 92%;
+	}
+
+	h3{
+		font-size: 24px;
+	}
+}
